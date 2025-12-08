@@ -141,11 +141,21 @@ body{
     margin: 0px;
 }
 
+.contenedor-ubicacion iframe{
+    width: 55%;
+    height: 40vh;
+}
+
 .contenedor-video-index{
     display: flex;
     justify-content: center;
     margin-top: 35px;
     margin-bottom: 10px;
+}
+
+.contenedor-video-index iframe{
+    width: 85%;
+    height: 60vh;
 }
 
 /*FOOTER*/
@@ -286,9 +296,14 @@ footer img{
         gap: 8px;
     }
 
+    .contenedor-ubicacion iframe{
+        width: 70%;
+        height: 35vh;
+    }
+
     .contenedor-video-index iframe{
         width: 80%;
-        height: 300px;
+        height: 50vh;
     }
 
     /*FOOTER*/
@@ -318,7 +333,7 @@ footer img{
     }
 
     footer label{
-        margin: opx 40px;
+        margin: 0px 40px;
     }
 
     .contenedor-redes{
