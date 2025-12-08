@@ -1,0 +1,520 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+/*INDEX*/
+/*ENZABEZADO*/
+header{
+    background-color: rgb(191, 161, 219);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1{
+    color: black;
+    font-size: 90px;
+    font-family: "Eagle Lake", serif;
+    font-weight: 900;
+    margin: 5px 10px 5px 10px;
+    padding: 8px;
+}
+
+.menu-navegacion{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 30px;
+    margin-right: 40px;
+    list-style-type: none;
+    gap: 60px;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(130 0 161);
+    text-decoration: underline;
+}
+
+/*MAIN*/
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: rgb(170, 137, 192);
+}
+
+.row{
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+.contenedor-entradas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contenedor-entradas h2{
+    font-family: "Vend Sans", sans-serif;
+    color: black;
+    font-size: 50px;
+    text-align: left;
+    padding: 5px;
+}
+
+.contenedor-entradas ul{
+    display: flex;
+    gap: 45px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 28px;
+}
+
+.contenedor-entradas li{
+    font-family: "Red Hat Display", sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.contenedor-entradas a{
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+.espaciado-entradas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.margen-boton{
+    margin-left: 6px;
+}
+
+.contenedor-ubicacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor-ubicacion div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contenedor-ubicacion img{
+    width: 40px;
+    height: 40px;
+}
+
+.contenedor-ubicacion h2{
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    margin: 0px;
+}
+
+.contenedor-video-index{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(191, 161, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer h2{
+    color: black;
+    font-size: 90px;
+    font-family: "Eagle Lake", serif;
+    font-weight: 900;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-left: 40px;
+    list-style-type: none;
+    gap: 60px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.contenedor-suscripcion{
+    padding: 10px;
+}
+
+footer form{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer input{
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+#emailNewsletter{
+    margin-left: 12px;
+    color: black;
+}
+
+.boton-suscribir{
+    padding: 0px 6px;
+}
+
+.contenedor-redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+.contenedor-mail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor-mail img{
+    width:25px;
+    height: 25px;
+}
+
+.contenedor-mail a{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+@media (max-width:576px) {
+    /*ENCABEZADO*/
+    h1{
+        font-size: 70px;
+    }
+
+    .container-fluid{
+        margin: 0px 30px;
+    }
+
+    .menu-navegacion{
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 0px;
+    }
+
+    /*MAIN*/
+    .row{
+        gap: 30px;
+    }
+
+    .contenedor-entradas{
+        align-items: center;
+    }
+
+    .contenedor-entradas ul{
+        gap: 30px;
+    }
+
+    .contenedor-entradas li{
+        text-align: center;
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    .espaciado-entradas{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contenedor-video-index iframe{
+        width: 80%;
+        height: 300px;
+    }
+
+    /*FOOTER*/
+    .contenedor-menu{
+        flex-direction: column;
+    }
+
+    footer h2{
+        font-size: 70px;
+    }
+
+    footer ul{
+        flex-direction: column;
+        padding: 10px;
+        margin: 0px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    footer a{
+        font-size: 20px;
+    }
+
+    footer form{
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    footer label{
+        margin: opx 40px;
+    }
+
+    .contenedor-redes{
+        gap: 20px;
+    }
+
+    footer img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/*DISCOGRAFIA*/
+.titulo-central{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-central h2{
+    font-family: "Vend Sans", sans-serif;
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo-central p{
+    font-family: "Red Hat Display", sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 15px;
+    margin: 15px 15px 0px 15px;
+    justify-items: center;
+}
+
+.contenedor-tarjetas h3{ 
+    font-family: "Vend Sans", sans-serif;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+}
+
+.card{
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    /* border-radius: var(--bs-card-border-radius); */
+    border-radius: 32px;
+    border: 1px black solid;
+}
+
+.estructura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botones{
+    padding: 5px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    color: black;
+    background-color: rgb(170, 137, 192);
+    border-radius: 20px;
+    border: 1px black solid;
+    margin-top: 10px;
+}
+
+.ver-mas{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 88px;
+}
+
+.ver-mas p{
+    text-align: end;
+    text-decoration: underline;
+    color: black;
+    margin: 0px;
+}
+
+.lineas{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    opacity: 100%;
+}
+
+/*GALERÍA*/
+.main-galeria{
+    display: flex;
+    justify-content: center;
+}
+
+.dimension{
+    width: 60%;
+}
+
+.main-galeria2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin: 10px;
+    gap: 20px;
+}
+/*VIDEOCLIPS*/
+.main-videoclips{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-videoclips h3{
+    font-family: "Vend Sans", sans-serif;
+    color: black;
+    font-size: xx-large;
+    text-align: left;
+}
+
+#meb-mobile{
+    display: none;
+}
+
+.videoclips{
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+}
+
+.main-videoclips hr{
+    width: 20%;
+    margin: 0px 0px 10px;
+}
+
+@media (max-width:576px) {
+
+    .main-videoclips hr{
+        width: 50%;
+    }
+
+    #meb-desktop{
+        display: none;
+    }
+
+    #meb-mobile{
+        display: block;
+    }
+    .ver-mas{
+        margin-right: 20px;
+    }
+
+}
