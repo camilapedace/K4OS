@@ -256,7 +256,7 @@ footer img{
     text-decoration: underline;
 }
 
-@media (max width:320) and (max-width:576px) {
+@media (max-width:576px) {
     /*ENCABEZADO*/
     h1{
         font-size: 70px;
