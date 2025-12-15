@@ -429,6 +429,11 @@ footer img{
     gap: 10px;
 }
 
+.margen-card{
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+}
+
 .botones{
     padding: 5px 20px;
     text-decoration: none;
@@ -493,12 +498,12 @@ hr{
     align-items: center;
     gap: 20px;
 }
+
 /*VIDEOCLIPS*/
 .main-videoclips{
     display: flex;
-    flex-direction: column;
+    
 }
-
 .main-videoclips h3{
     font-family: "Vend Sans", sans-serif;
     color: black;
@@ -506,23 +511,22 @@ hr{
     text-align: left;
 }
 
+.main-videoclips hr{
+    width: 20%;
+    margin: 0px 0px 10px;
+}
+
+.main-videoclips article{
+    margin-bottom: 45px;
+}
+
 #meb-mobile{
     display: none;
 }
 
-.videoclips{
-    display: flex;
-    justify-content: center;
-}
-
-article{
-    margin: 10px 10px 20px 10px;
-    padding: 10px;
-}
-
-.main-videoclips hr{
-    width: 20%;
-    margin: 0px 0px 10px;
+.videoclips iframe{
+    width: 650px;
+    height: 400px;
 }
 
 @media (max-width:576px) {
