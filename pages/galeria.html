@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!--LINK CON CSS-->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,70 +59,119 @@
             <h2>FOTOS</h2>
             <br>
         </section>
-        <section class="main-galeria">
-            <div id="carouselExampleIndicators" class="carousel slide dimension">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/imggaleria1.jpg" class="d-block w-100" alt="kaos en outfit de rage">
+        <section>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria1.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="0">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria2.jpg" class="d-block w-100" alt="kaos abarazadas en meb">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria2.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria3.jpg" class="d-block w-100" alt="kaos dance practice push4fun">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria3.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="2">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria4.jpg" class="d-block w-100" alt="kaos en outfit de extra">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria4.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="3">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria5.jpg" class="d-block w-100" alt="foto individual lily">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria5.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="4">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria6.jpeg" class="d-block w-100" alt="foto individual ine">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria6.jpeg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="5">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria7.jpg" class="d-block w-100" alt="foto individual mechi">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria7.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="6">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria8.jpg" class="d-block w-100" alt="foto individual tau">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria8.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="7">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria9.jpg" class="d-block w-100" alt="kaos en outfit de meb">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria9.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="8">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria10.jpg" class="d-block w-100" alt="kaos foto promocional rage">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria10.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="9">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria11.jpg" class="d-block w-100" alt="kaos en outfit de push4fun">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria11.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="10">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imggaleria12.jpg" class="d-block w-100" alt="kaos en outfit de tekila">
+                    <div class="col-sm-1 col-md-3">
+                        <img src="../assets/imggaleria12.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="11">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+            <div class="modal fade" id="galleryModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-md modal-fullscreen-sm-down">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/imggaleria1.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria2.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria3.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria4.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria5.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria6.jpeg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria7.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria8.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria9.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria10.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria11.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/imggaleria12.jpg" class="d-block w-100 rounded">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const galleryModal = document.getElementById('galleryModal')
+                galleryModal.addEventListener('show.bs.modal', event => {
+                    const img = event.relatedTarget
+                    const slideIndex = img.getAttribute('data-bs-slide-to')
+
+                    const carousel = document.querySelector('#galleryCarousel')
+                    const bsCarousel = bootstrap.Carousel.getInstance(carousel) 
+                        || new bootstrap.Carousel(carousel)
+
+                    bsCarousel.to(slideIndex)
+                })
+            </script>
         </section>
+        
         <br>
         <div class="ver-mas">
             <a href="">
@@ -140,16 +189,16 @@
         </div>
         <section class="main-galeria2">
             <div class="alineacion-videos">
-                <iframe width="660" height="415" src="https://www.youtube.com/embed/ZIIZBoivuOg?si=gKA84Nr_UC_tNs7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="660" height="415" src="https://www.youtube.com/embed/8t5SasSRzgk?si=Wu4bUq3rvSqikqdb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/ZIIZBoivuOg?si=gKA84Nr_UC_tNs7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/8t5SasSRzgk?si=Wu4bUq3rvSqikqdb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="alineacion-videos">
-                <iframe width="660" height="415" src="https://www.youtube.com/embed/5ZXo6adSCZ8?si=991QtP0NND_zpV8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="660" height="415" src="https://www.youtube.com/embed/ZuxtONbgpug?si=ekuLBJ9-o1tPVUdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/5ZXo6adSCZ8?si=991QtP0NND_zpV8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/ZuxtONbgpug?si=ekuLBJ9-o1tPVUdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="alineacion-videos">
-                <iframe width="660" height="415" src="https://www.youtube.com/embed/1ufpJgZ9vDc?si=f_mR5yyf2uT-rvml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="660" height="415" src="https://www.youtube.com/embed/rfVa3Z-6KX8?si=yPz3ye8C1Xuwgecd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/1ufpJgZ9vDc?si=f_mR5yyf2uT-rvml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/rfVa3Z-6KX8?si=yPz3ye8C1Xuwgecd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <br>
         </section>            
@@ -163,7 +212,9 @@
     <!--PIE DE PÁGINA-->
     <footer>
         <div class="contenedor-menu">
-            <h2>K4OS</h2>
+            <h2>
+                <a href="../index.html">K4OS</a>
+            </h2> 
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./discografia.html">Discografía</a></li>
