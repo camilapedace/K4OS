@@ -1,0 +1,58 @@
+@use "../utilities/variables";
+
+/*GALERÍA*/
+.main-galeria{
+    @include variables.flex (none,none,center,none,none);
+}
+
+.dimension{
+    width: 60%;
+}
+
+.main-galeria2{
+    @include variables.flex (column,center,center,none,none);
+    margin: 10px;
+    gap: 20px;
+}
+
+.alineacion-videos{
+    @include variables.flex (row,center,center,none,none);
+    gap: 20px;
+}
+
+.gallery-img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.modal-header .btn-close {
+    filter: invert(0);
+}
+
+.modal-header {
+    background-color: variables.$color-fondo-body;
+}
+
+.modal-body{
+    background-color: variables.$color-fondo-body;
+}
+
+.alineacion-videos iframe{
+    @include variables.tamaño (660px, 415px);
+}
+
+/*ADAPTACIÓN RESPONSIVE*/
+@media (max-width:576px) {
+    .alineacion-videos{
+        @include variables.flex (column,none,none,none,none);
+    }
+
+    .alineacion-videos iframe{
+        @include variables.tamaño (90vw, 50vh);
+    }
+}
+

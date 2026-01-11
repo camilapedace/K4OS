@@ -1,0 +1,100 @@
+@use "../utilities/variables";
+
+/*NOTICIAS*/
+.contenedor-noticias{
+    @include variables.flex (none,center,center,none,none);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-noticias h3{
+    margin: 15px 0px;
+    font-family: "Vend Sans", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedor-noticias .row{
+    padding: 0px;
+}
+
+.contenedor-noticias article{
+    padding: 5px 5px 10px 5px;
+    margin: 0px 40px;
+}
+
+.contenedor-noticias article img{
+    border-radius: 15px;
+    width: 80%;
+}
+
+.contenedor-noticias article p{
+    font-family: "Red Hat Display", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    font-size: 15px;
+    text-align: left;
+    padding-right: 5px;
+}
+
+.fotos-noticias{
+    @include variables.flex (none,flex-start,center,none,none);
+    gap: 10px;
+}
+
+.textos-noticias{
+    @include variables.flex (column,center,flex-start,none,none);
+    gap: 10px;
+}
+
+.boton-noticias{
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.estructura-noticias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.botones2{
+    @include variables.botones (5px 45px);
+}
+
+.botones2:hover{
+    @include variables.hover (bold,variables.$color-texto-predeterminado)
+}
+
+/*ADAPTACIÓN RESPONSIVE*/
+@media (max-width:576px) {
+    .contenedor-noticias{
+        @include variables.flex (column,none,none,none,none);
+    }
+
+    .fuera-margen{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .estructura-noticias{
+        @include variables.flex (column,none,none,none,none);
+        gap: 15px;
+    }
+
+    .contenedor-noticias article{
+        width: 80%;
+    }
+
+    .contenedor-noticias article p{
+        text-align: center;
+        font-size: 22px;
+        padding: 1px 10px;
+    }
+
+    .botones2{
+        padding: 10px 65px;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+}

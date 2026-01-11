@@ -1,0 +1,135 @@
+@use "../utilities/variables";
+
+/*INDEX*/
+.banner{
+    @include variables.tamaño (100%, auto);
+}
+
+body{
+    background-color: variables.$color-fondo-body;
+}
+
+.row{
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+.contenedor-entradas{
+    @include variables.flex (column,flex-start,none,none,none);
+}
+
+.contenedor-entradas h2{
+    font-family: "Vend Sans", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    font-size: 50px;
+    text-align: left;
+    padding: 5px;
+}
+
+.contenedor-entradas ul{
+    @include variables.flex (column,flex-start,none,nowrap,none);
+    gap: 45px;
+    padding-left: 28px;
+}
+
+.contenedor-entradas li{
+    font-family: "Red Hat Display", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    text-align: left;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.contenedor-entradas a{
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    background-color: variables.$color-fondo-boton-entradas;
+    border-radius: 10px;
+    border: 1px variables.$color-texto-predeterminado solid;
+}
+
+.contenedor-entradas a:hover{
+    @include variables.hover (700,variables.$color-texto-predeterminado)
+}
+
+.espaciado-entradas{
+    @include variables.flex (row,center,none,none,none);
+    gap: 15px;
+}
+
+.margen-boton{
+    margin-left: 6px;
+}
+
+.contenedor-ubicacion{
+    @include variables.flex (column,center,center,wrap,center);
+}
+
+.contenedor-ubicacion div{
+    @include variables.flex (row,center,none,wrap,none);
+    margin-bottom: 5px;
+}
+
+.contenedor-ubicacion img{
+    @include variables.tamaño (40px, 40px);
+}
+
+.contenedor-ubicacion h2{
+    color: variables.$color-texto-predeterminado;
+    font-size: 30px;
+    text-align: right;
+    margin: 0px;
+}
+
+.contenedor-ubicacion iframe{
+    @include variables.tamaño (55%, 40vh);
+}
+
+.contenedor-video-index{
+    @include variables.flex (none,none,center,none,none);
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.contenedor-video-index iframe{
+    @include variables.tamaño (85%, 60vh);
+}
+
+/*ADAPTACIÓN RESPONSIVE*/
+@media (max-width:576px) {
+    .row{
+        gap: 30px;
+    }
+
+    .contenedor-entradas{
+        align-items: center;
+    }
+
+    .contenedor-entradas ul{
+        gap: 30px;
+    }
+
+    .contenedor-entradas li{
+        text-align: center;
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+
+    .espaciado-entradas{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contenedor-ubicacion iframe{
+        @include variables.tamaño (70%, 35vh);
+    }
+
+    .contenedor-video-index iframe{
+        @include variables.tamaño (90%, 50vh);
+    }
+}
+

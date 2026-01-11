@@ -1,0 +1,58 @@
+@use "../utilities/variables";
+
+/*VIDEOCLIPS*/
+.main-videoclips{
+    @include variables.flex (none,none,none,none,none);
+}
+
+.main-videoclips h3{
+    font-family: "Vend Sans", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    font-size: xx-large;
+    text-align: left;
+}
+
+.main-videoclips hr{
+    width: 20%;
+    margin: 0px 0px 10px;
+}
+
+.main-videoclips article{
+    margin-bottom: 45px;
+}
+
+#meb-mobile{
+    display: none;
+}
+
+.videoclips iframe{
+    @include variables.tamaño (650px, 400px);
+}
+
+#contenedor-videoclips{
+    margin: 0px;
+}
+
+/*ADAPTACIÓN RESPONSIVE*/
+@media (max-width:576px) {
+    .main-videoclips hr{
+        width: 50%;
+    }
+
+    #meb-desktop{
+        display: none;
+    }
+
+    #meb-mobile{
+        display: block;
+    }
+    .ver-mas{
+        margin-right: 20px;
+    }
+
+    .videoclips iframe{
+        @include variables.tamaño (100%, 50vh);
+    }
+
+}
+

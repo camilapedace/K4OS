@@ -1,0 +1,152 @@
+@use "../utilities/variables";
+
+/*DISCOGRAFIA*/
+.titulo-central{
+    @include variables.flex (column,center,center,wrap,none);
+}
+
+.titulo-central h2{
+    font-family: "Vend Sans", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo-central p{
+    font-family: "Red Hat Display", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 15px;
+    margin: 15px 15px 0px 15px;
+    justify-items: center;
+}
+
+.contenedor-tarjetas h3{ 
+    font-family: "Vend Sans", sans-serif;
+    color: variables.$color-texto-predeterminado;
+    font-size: x-large;
+    text-align: center;
+}
+
+.card{
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    /* border-radius: var(--bs-card-border-radius); */
+    border-radius: 32px;
+    border: 1px variables.$color-texto-predeterminado solid;
+}
+
+.estructura{
+    @include variables.flex (column,center,center,none,none);
+    gap: 10px;
+}
+
+.margen-card{
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+}
+
+.botones{
+    @include variables.botones (5px 20px);
+}
+
+.botones:hover{
+    @include variables.hover (bold,variables.$color-texto-predeterminado)
+}
+
+.ver-mas{
+    @include variables.flex (none,none,flex-end,none,none);
+    margin-right: 88px;
+}
+
+.ver-mas p{
+    text-align: end;
+    text-decoration: underline;
+    color: variables.$color-texto-predeterminado;
+    margin: 0px;
+}
+
+.ver-mas p:hover{
+    @include variables.hover (bold,variables.$color-texto-predeterminado)
+}
+
+.lineas{
+    @include variables.flex (none,none,center,none,none);
+}
+
+hr{
+    @include variables.tamaño (50%, 2px);
+    background-color: variables.$color-texto-predeterminado;
+    opacity: 100%;
+}
+
+/*ADAPTACIÓN RESPONSIVE*/
+@media (max-width:576px) {
+    .contenedor-tarjetas{
+        @include variables.flex (column,center,none,none,none);
+    }
+
+    .contenedor-tarjetas article{
+        width: 100%;
+    }
+
+    .titulo-central h2{
+        font-size: 90px;
+    }
+
+    .titulo-central p{
+        font-size: 24px;
+    }
+
+    .contenedor-tarjetas h3{
+        font-size: 40px;
+    }
+
+    .botones{
+        padding: 10px 30px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    hr{
+        width: 70%;
+    }
+
+    .ver-mas p{
+        font-size: 20px;
+    }
+}

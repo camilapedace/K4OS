@@ -1,0 +1,38 @@
+$color-fondo-header-footer: rgb(191, 161, 219);
+$color-fondo-body: rgb(170, 137, 192);
+$color-link-navbar: rgb(130 0 161);
+$color-texto-predeterminado: black;
+$color-fondo-boton-entradas: white;
+
+@mixin flex ($direction, $align, $justify, $wrap, $acontent){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    align-content: $acontent;
+}
+
+@mixin tamaño ($widht,$height){
+    width: $widht;
+    height: $height;
+}
+
+@mixin botones ($padding){
+    padding: $padding;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    color: $color-texto-predeterminado;
+    background-color: $color-fondo-body;
+    border-radius: 20px;
+    border: 1px $color-texto-predeterminado solid;
+    margin-top: 10px;
+}
+
+@mixin hover ($weight,$color-texto){
+    font-weight: $weight;
+    color: $color-texto;
+    transition: 0.3s;
+}
