@@ -21,7 +21,7 @@ header {
   align-content: none;
 }
 
-h1 a {
+a h1 {
   color: black solid;
   font-size: 90px;
   font-family: "Eagle Lake", serif;
@@ -91,7 +91,7 @@ footer {
   align-content: none;
 }
 
-footer h2 a {
+footer a h2 {
   color: black;
   font-size: 90px;
   font-family: "Eagle Lake", serif;

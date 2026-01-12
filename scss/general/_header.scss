@@ -6,7 +6,7 @@ header{
     @include variables.flex (row,center,space-between,none,none);
 }
 
-h1 a{
+a h1{
     color: variables.$color-texto-predeterminado solid;
     font-size: 90px;
     font-family: "Eagle Lake", serif;

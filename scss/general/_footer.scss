@@ -10,7 +10,7 @@ footer{
     @include variables.flex (row,center,none,wrap,none);
 }
 
-footer h2 a{
+footer a h2{
     color: variables.$color-texto-predeterminado;
     font-size: 90px;
     font-family: "Eagle Lake", serif;
