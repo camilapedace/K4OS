@@ -75,7 +75,7 @@
 
     .fila1{
         @include variables.flex (column,center,center,none,none);
-        gap: 0px
+        gap: 0px;
     }
 
     .fila2{
