@@ -753,7 +753,7 @@ hr {
     justify-content: center;
     flex-wrap: none;
     align-content: none;
-    gap: 20px;
+    gap: 0px;
   }
   .fila2 {
     display: flex;
@@ -762,7 +762,7 @@ hr {
     justify-content: center;
     flex-wrap: none;
     align-content: none;
-    gap: 20px;
+    gap: 0px;
   }
   .fila3 {
     display: flex;
@@ -771,7 +771,7 @@ hr {
     justify-content: center;
     flex-wrap: none;
     align-content: none;
-    gap: 20px;
+    gap: 0px;
   }
   .main-videoclips article {
     padding: 0px 10px;
