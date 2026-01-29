@@ -661,21 +661,60 @@ hr {
   color: black;
   font-size: xx-large;
   text-align: left;
+  position: relative;
+  padding-bottom: 12px;
 }
 
-.main-videoclips hr {
-  width: 20%;
-  margin: 0px 0px 10px;
+.main-videoclips h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 3px;
+  background-color: black;
+  transform: translateZ(0);
 }
 
 .main-videoclips article {
   margin-bottom: 45px;
+  padding: 0px 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: none;
   align-content: none;
+}
+
+.fila1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: none;
+  align-content: none;
+  gap: 80px;
+}
+
+.fila2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: none;
+  align-content: none;
+  gap: 80px;
+}
+
+.fila3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: none;
+  align-content: none;
+  gap: 80px;
 }
 
 #meb-mobile {
@@ -687,21 +726,13 @@ hr {
   height: 400px;
 }
 
-#contenedor-videoclips {
+.contenedor-videoclips {
   margin: 0px;
-  display: flex;
-  flex-direction: none;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: none;
-  align-content: none;
+  padding: 0px 0px;
 }
 
 /*ADAPTACIÓN RESPONSIVE*/
 @media (max-width: 576px) {
-  .main-videoclips hr {
-    width: 50%;
-  }
   #meb-desktop {
     display: none;
   }
@@ -712,8 +743,41 @@ hr {
     margin-right: 20px;
   }
   .videoclips iframe {
-    width: 100%;
+    width: 85vw;
     height: 50vh;
+  }
+  .fila1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: none;
+    align-content: none;
+    gap: 20px;
+  }
+  .fila2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: none;
+    align-content: none;
+    gap: 20px;
+  }
+  .fila3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: none;
+    align-content: none;
+    gap: 20px;
+  }
+  .main-videoclips article {
+    padding: 0px 10px;
+  }
+  .main-videoclips h3::after {
+    width: 200px;
   }
 }
 /*NOTICIAS*/
