@@ -47,7 +47,7 @@
 }
 
 .videoclips iframe{
-    @include variables.tamaño (650px, 400px);
+    @include variables.tamaño (550px, 400px);
 }
 
 .contenedor-videoclips{
@@ -75,17 +75,17 @@
 
     .fila1{
         @include variables.flex (column,center,center,none,none);
-        gap: 20px
+        gap: 40px
     }
 
     .fila2{
         @include variables.flex (column,center,center,none,none);
-        gap: 20px;
+        gap: 40px;
     }
 
     .fila3{
         @include variables.flex (column,center,center,none,none);
-        gap: 20px;
+        gap: 40px;
     }
 
     .main-videoclips article{
