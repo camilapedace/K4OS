@@ -47,7 +47,7 @@
 }
 
 .videoclips iframe{
-    @include variables.tamaño (550px, 400px);
+    @include variables.tamaño (42vw, 50vh);
 }
 
 .contenedor-videoclips{
