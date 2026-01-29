@@ -656,15 +656,6 @@ hr {
   }
 }
 /*VIDEOCLIPS*/
-.main-videoclips {
-  display: flex;
-  flex-direction: none;
-  align-items: none;
-  justify-content: none;
-  flex-wrap: none;
-  align-content: none;
-}
-
 .main-videoclips h3 {
   font-family: "Vend Sans", sans-serif;
   color: black;
@@ -679,6 +670,12 @@ hr {
 
 .main-videoclips article {
   margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: none;
+  align-content: none;
 }
 
 #meb-mobile {
@@ -692,6 +689,12 @@ hr {
 
 #contenedor-videoclips {
   margin: 0px;
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: none;
+  align-content: none;
 }
 
 /*ADAPTACIÓN RESPONSIVE*/

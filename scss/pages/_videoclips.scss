@@ -1,24 +1,45 @@
 @use "../utilities/variables";
 
 /*VIDEOCLIPS*/
-.main-videoclips{
-    @include variables.flex (none,none,none,none,none);
-}
-
 .main-videoclips h3{
     font-family: "Vend Sans", sans-serif;
     color: variables.$color-texto-predeterminado;
     font-size: xx-large;
     text-align: left;
+    position: relative;
+    padding-bottom: 12px;
 }
 
-.main-videoclips hr{
-    width: 20%;
-    margin: 0px 0px 10px;
+.main-videoclips h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 3px;
+    background-color: variables.$color-texto-predeterminado;
+    transform: translateZ(0);
 }
 
 .main-videoclips article{
     margin-bottom: 45px;
+    padding: 0px 30px;
+    @include variables.flex (column,flex-start,center,none,none);
+}
+
+.fila1{
+    @include variables.flex (row,center,center,none,none);
+    gap: 80px
+}
+
+.fila2{
+    @include variables.flex (row,center,center,none,none);
+    gap: 80px;
+}
+
+.fila3{
+    @include variables.flex (row,center,center,none,none);
+    gap: 80px;
 }
 
 #meb-mobile{
@@ -29,16 +50,13 @@
     @include variables.tamaño (650px, 400px);
 }
 
-#contenedor-videoclips{
+.contenedor-videoclips{
     margin: 0px;
+    padding: 0px 0px;
 }
 
 /*ADAPTACIÓN RESPONSIVE*/
 @media (max-width:576px) {
-    .main-videoclips hr{
-        width: 50%;
-    }
-
     #meb-desktop{
         display: none;
     }
@@ -46,13 +64,37 @@
     #meb-mobile{
         display: block;
     }
+
     .ver-mas{
         margin-right: 20px;
     }
 
     .videoclips iframe{
-        @include variables.tamaño (100%, 50vh);
+        @include variables.tamaño (85vw, 50vh);
     }
 
+    .fila1{
+        @include variables.flex (column,center,center,none,none);
+        gap: 20px
+    }
+
+    .fila2{
+        @include variables.flex (column,center,center,none,none);
+        gap: 20px;
+    }
+
+    .fila3{
+        @include variables.flex (column,center,center,none,none);
+        gap: 20px;
+    }
+
+    .main-videoclips article{
+        padding: 0px 10px;
+    }
+
+    .main-videoclips h3::after{
+        width: 200px;
+    }
 }
+
 
