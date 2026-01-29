@@ -722,7 +722,7 @@ hr {
 }
 
 .videoclips iframe {
-  width: 42vw;
+  width: 40vw;
   height: 50vh;
 }
 
@@ -753,7 +753,7 @@ hr {
     justify-content: center;
     flex-wrap: none;
     align-content: none;
-    gap: 40px;
+    gap: 20px;
   }
   .fila2 {
     display: flex;
@@ -762,7 +762,7 @@ hr {
     justify-content: center;
     flex-wrap: none;
     align-content: none;
-    gap: 40px;
+    gap: 20px;
   }
   .fila3 {
     display: flex;
@@ -771,7 +771,7 @@ hr {
     justify-content: center;
     flex-wrap: none;
     align-content: none;
-    gap: 40px;
+    gap: 20px;
   }
   .main-videoclips article {
     padding: 0px 10px;
