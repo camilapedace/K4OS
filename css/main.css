@@ -694,7 +694,7 @@ hr {
   justify-content: center;
   flex-wrap: none;
   align-content: none;
-  gap: 80px;
+  gap: 50px;
 }
 
 .fila2 {
@@ -704,7 +704,7 @@ hr {
   justify-content: center;
   flex-wrap: none;
   align-content: none;
-  gap: 80px;
+  gap: 50px;
 }
 
 .fila3 {
@@ -714,7 +714,7 @@ hr {
   justify-content: center;
   flex-wrap: none;
   align-content: none;
-  gap: 80px;
+  gap: 50px;
 }
 
 #meb-mobile {

@@ -29,17 +29,17 @@
 
 .fila1{
     @include variables.flex (row,center,center,none,none);
-    gap: 80px
+    gap: 50px
 }
 
 .fila2{
     @include variables.flex (row,center,center,none,none);
-    gap: 80px;
+    gap: 50px;
 }
 
 .fila3{
     @include variables.flex (row,center,center,none,none);
-    gap: 80px;
+    gap: 50px;
 }
 
 #meb-mobile{
